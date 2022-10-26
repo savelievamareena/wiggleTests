@@ -5,12 +5,8 @@ import com.stv.factory.factorytests.BasicFactoryTest;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.cucumber.testng.CucumberOptions;
 import org.testng.Assert;
 
-@CucumberOptions(tags = "@tags",
-        features = "src/test/java/com.stv/bdd_framework/features/",
-        glue = "com.stv.bdd_framework.steps")
 public class LoginPageStep extends BasicFactoryTest {
     LoginPage loginPage = new LoginPage();
 
