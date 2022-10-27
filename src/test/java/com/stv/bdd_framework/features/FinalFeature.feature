@@ -6,15 +6,15 @@ Feature: To test Terms & Conditions works properly
     And user clicks on Terms & Conditions link
     Then Terms & Conditions page is opened
 
-    Scenario: 02. Open shipment info page
-      Given Terms & Conditions page is opened
-      When a user clicks shipping information link
-      And shipping information page is opened
+  Scenario: 02. Open shipment info page
+    Given Terms & Conditions page is opened
+    When a user clicks shipping information link
+    And shipping information page is opened
 
-      Scenario: 03. Check if shipment info page works correctly
-        Given shipping information page is opened
-        When a user opens delivery information
-        And How We Process Your Order block is not displayed
-        And a user clicks How We Process Your Order tab
-        And How We Process Your Order block is displayed
-        Then a user returns to the main page
+  Scenario: 03. Check if shipment info page works correctly
+    Given shipping information page is opened
+    When a user opens delivery information
+    And How We Process Your Order block is not displayed
+    And a user clicks How We Process Your Order tab
+    And How We Process Your Order block is displayed
+    Then a user returns to the main page

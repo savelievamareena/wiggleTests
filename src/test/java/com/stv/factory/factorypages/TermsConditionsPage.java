@@ -1,10 +1,8 @@
 package com.stv.factory.factorypages;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class TermsConditionsPage extends FactoryPage{
-
     @FindBy(linkText="Terms & conditions")
     private WebElement termsConditionsLink;
 
@@ -25,5 +23,4 @@ public class TermsConditionsPage extends FactoryPage{
     public void clickShippingInformationLink() {
         shippingInformationLink.click();
     }
-
 }
